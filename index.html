@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Madhankumar M | Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+}
+
+/* Navbar */
+nav{
+    background:linear-gradient(90deg,#001f54,#003b9b);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* Hero */
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:white;
+}
+
+.hero h1{
+    font-size:60px;
+    color:#0a2d72;
+}
+
+.hero h2{
+    color:#2962ff;
+    margin:15px 0;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    background:#003b9b;
+    color:white;
+    padding:12px 30px;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+/* Sections */
+section{
+    padding:60px 80px;
+}
+
+.section-title{
+    color:#0a2d72;
+    font-size:35px;
+    margin-bottom:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+/* Skills */
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:15px;
+}
+
+.skill{
+    background:#eaf1ff;
+    color:#003b9b;
+    text-align:center;
+    padding:12px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+/* Projects */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.github-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 15px;
+    border:2px solid #003b9b;
+    color:#003b9b;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+/* Contact */
+.contact p{
+    margin:15px 0;
+    font-size:18px;
+}
+
+.contact i{
+    color:#003b9b;
+    margin-right:10px;
+}
+
+/* Footer */
+footer{
+    background:linear-gradient(90deg,#001f54,#003b9b);
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+section{
+    padding:40px 20px;
+}
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">Portfolio</div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero" id="home">
+    <h1>Madhankumar M</h1>
+
+    <h2>B.Tech Information Technology Student</h2>
+
+    <p>
+        Aspiring Data Scientist with knowledge in Python,
+        Machine Learning, Pandas, NumPy and Statistics.
+    </p>
+
+    <a href="#contact" class="btn">Contact Me</a>
+</section>
+
+<section id="about">
+    <h2 class="section-title">
+        <i class="fas fa-user"></i> About Me
+    </h2>
+
+    <div class="card">
+        <p>
+            Hello! I'm Madhankumar M, a B.Tech Information Technology student at
+            Erode Sengunthar Engineering College with a strong passion for Data Science,
+            Machine Learning, and Software Development. I have hands-on experience
+            working with Python, Pandas, NumPy, Matplotlib, and machine learning
+            algorithms for data analysis and predictive modeling. Through academic
+            projects such as Resume Data Analysis and House Price Prediction, I have
+            developed skills in data preprocessing, visualization, and problem-solving.
+            My goal is to become a Data Scientist or Software Engineer and contribute
+            to innovative technology solutions.
+        </p>
+    </div>
+</section>
+
+<section id="education">
+    <h2 class="section-title">
+        <i class="fas fa-graduation-cap"></i> Education
+    </h2>
+
+    <div class="card">
+        <h3>Erode Sengunthar Engineering College</h3>
+        <p>B.Tech Information Technology</p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">
+        <i class="fas fa-code"></i> Skills
+    </h2>
+
+    <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">Pandas</div>
+        <div class="skill">NumPy</div>
+        <div class="skill">Machine Learning</div>
+        <div class="skill">Matplotlib</div>
+        <div class="skill">Statistics</div>
+        <div class="skill">Data Analysis</div>
+        <div class="skill">SQL</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">
+        <i class="fas fa-folder"></i> Projects
+    </h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <h3>Resume Data Analysis</h3>
+            <p>Analyzed resume datasets using Python, Pandas and Data Visualization.</p>
+
+            <a class="github-btn"
+            href="https://github.com/madhan28122004/Resume-data-analysis_Madhankumar"
+            target="_blank">
+                <i class="fab fa-github"></i> View Project
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>House Price Prediction</h3>
+            <p>Machine Learning model developed using Python and Scikit-Learn.</p>
+
+            <a class="github-btn"
+            href="https://github.com/madhan28122004/House-price-prediction_Madhankumar"
+            target="_blank">
+                <i class="fab fa-github"></i> View Project
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">
+        <i class="fas fa-envelope"></i> Contact
+    </h2>
+
+    <div class="card contact">
+        <p><i class="fas fa-envelope"></i> Email: madhankumar989890@gmail.com</p>
+        <p><i class="fas fa-phone"></i> Phone: 6381066818</p>
+        <p><i class="fab fa-github"></i> GitHub: github.com/madhan28122004</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Madhankumar M
+</footer>
+
+</body>
+</html>
